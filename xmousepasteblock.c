@@ -60,7 +60,7 @@ void init_eventmask(void) {
     masks[0].mask_len = sizeof(mask);
     masks[0].mask = mask;
 
-    XISetMask(mask, XI_ButtonPress);
+    XISetMask(mask, XI_RawButtonPress);
 
     XISelectEvents(display, DefaultRootWindow(display), masks, 1);
     XFlush(display);
